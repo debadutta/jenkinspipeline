@@ -8,16 +8,22 @@ steps{
 echo "Building the Project.........."
 }
 }
+stage('Deploy') 
+{
+steps{
+echo "Deploying the Project.........."
+}
+}
 stage('Test') 
 {
 steps{
 echo "Testing the Project.........."
 }
 }
-stage('Deploy') 
+stage('Release') 
 {
 steps{
-echo "Deploying the Project.........."
+echo "Releasing the Project.........."
 }
 }
 }
