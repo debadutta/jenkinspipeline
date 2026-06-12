@@ -5,13 +5,17 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Building the Project.........."
+                echo "Started building the Project.........."
+                sleep 5
+                echo "Build complete."
             }
         }
 
         stage('Deploy') {
             steps {
                 echo "Deploying the Project.........."
+                sleep 5
+                echo "Deployment complete."
             }
         }
 
